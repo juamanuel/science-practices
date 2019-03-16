@@ -1,0 +1,22 @@
+@import './constants.scss';
+
+.Menu {
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ li a {
+     text-decoration: none;
+     font-family: $text_light;
+     color: $sec_color;
+     font-size: 28px;
+ }
