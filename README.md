@@ -1,7 +1,6 @@
 
-##SCIENCE PRACTICES
+## SCIENCE PRACTICES
 Of teacher for teachers
-
 
 ## Install create-react-app
 npx create-react-app my-app
