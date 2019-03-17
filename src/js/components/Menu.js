@@ -3,8 +3,7 @@ import React from 'react'
 import '../../css/menu.scss'
 
 const Menu = () => {
-    return (
-        
+    return (     
         <div className="Menu">
              <ul>
                     <li><a href="#">Prácticas de Ciencias</a></li>

@@ -1,0 +1,9 @@
+@import './constants.scss';
+
+.Title {
+    display: flex;
+    justify-content: center;
+    font-family: $text_medium;
+    color: $main_color;
+    font-size: 40px;
+}
