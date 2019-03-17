@@ -2,6 +2,7 @@ import React , {Component} from 'react'
 import Header from '../containers/Header'
 import Title from '../components/Title'
 import CardSection from '../containers/CardSection'
+import Footer from '../containers/Footer'
 class Home extends Component {
     render(){
         return(
@@ -11,6 +12,7 @@ class Home extends Component {
                     title="Elige una asignatura"
                 />
                 <CardSection/>
+                <Footer/>
           </div>
         )
     }
