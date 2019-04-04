@@ -1,4 +1,4 @@
-@import './constants.scss';
+@import './../../css/constants.scss';
 
 .Card {
     max-width: 350px;
@@ -24,4 +24,9 @@
     color: $main_color;
     font-family: $text_light;
     font-size: 36px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
