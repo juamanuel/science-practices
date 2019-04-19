@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .Image {
@@ -23,8 +26,9 @@
 .TitleCard {
     color: $main_color;
     font-family: $text_light;
-    font-size: 36px;
+    font-size: 30px;
     text-decoration: none;
+    height: 100px;
 }
 
 a {

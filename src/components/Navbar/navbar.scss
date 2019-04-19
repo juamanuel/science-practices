@@ -1,7 +1,10 @@
 @import '../../css/constants.scss';
 
-.Menu {
+.Navbar {
+    background: $white;
     margin: 0 auto;
+    border-bottom: 1px solid $sec_color;
+    padding: 20px 40px 20px 40px;
 }
 
 ul {

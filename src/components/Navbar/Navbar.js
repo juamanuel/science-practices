@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './menu.scss'
+import './navbar.scss'
 
-const Menu = () => {
+const Navbar = () => {
     return (     
-        <div className="Menu">
+        <div className="Navbar">
              <ul>
                     <Link to ="/">
                       <li>Prácticas de Ciencias</li>
@@ -15,4 +15,4 @@ const Menu = () => {
         </div>
     )
   }
-export default Menu
+export default Navbar

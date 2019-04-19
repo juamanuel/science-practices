@@ -1,0 +1,11 @@
+@import '../../css/constants.scss';
+
+.NotFound{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:$main_color;
+    font-family: $text_font;
+    height: 300px;
+
+}
