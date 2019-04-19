@@ -12,8 +12,8 @@ class Axes extends Component{
         error: null,
         data : undefined,
         id: this.props.location.state.id,
-        subject:" ",
-        subjectLink:" "
+        subject:"",
+        subjectLink:""
     }
 
     componentDidMount(){
@@ -21,21 +21,24 @@ class Axes extends Component{
     }
 
 
-
-    fetchData = () => {
+    fetchData = async () => {
         this.setState({loading:true, error:null})
         try{
-            const data = api
+            const data = await api
             this.setState({loading:false, data:data})
-            this.state.data.subjects.map(subject => (
-                subject.id === this.state.id ?
-                 //this.setState({ subject: subject.title, subjectLink: subject.link})
-                 console.log(this.state.subject)
-              : null
-            ))
+            this.getSubjectInfo()
         }catch(error){
             this.setState({loading:false, error:error})
         }
+    }
+
+    getSubjectInfo = () =>{
+        console.log(this.state.data)
+        this.state.data.subjects.map(subject =>(
+            subject.id === this.state.id ?
+            this.setState({subject:subject.title, subjectLink:subject.link})
+            : null
+         ))
     }
 
     renderTitle = () => {
@@ -73,24 +76,26 @@ class Axes extends Component{
         )         
     }
 
-
+   renderFooter = () => {
+        return(
+                    <Footer
+                        home="Inicio > "
+                        subject={this.state.subject}
+                        routeSubject={this.state.subjectLink}
+                        axes=""
+                        routeAxes=""
+                    />   
+        )
+     }
     render(){
         if(this.state.loading){
             return 'Loading ...'
         }
         return(
             <React.Fragment>
-               {this.renderTitle()}
+                {this.renderTitle()}
                 {this.renderCards()}
-                <Footer
-                     key= ""
-                     home="Inicio > "
-                     subject={this.state.subject}
-                     axes=""
-                     routeSubject={this.state.subjectLink}
-                     routeAxes=""
-                />
-                
+                {this.renderFooter()}
             </React.Fragment>
         )
     }
