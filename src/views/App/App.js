@@ -2,12 +2,8 @@ import React from 'react'
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import Home from '../Home/Home'
-//import Biology from '../Biology/Biology'
-//import Physics from '../Physics/Physics'
-//import Chemistry from '../Chemistry/Chemistry'
-//import BiologyAxes1 from '../BiologyAxes1/BiologyAxes1'
-//import PhysicsAxes1 from '../PhysicsAxes1/PhysicsAxes1'
 import Axes from '../Axes/Axes'
+import Content from '../Content/Content'
 import Topics from '../Topics/Topics'
 import NotFound from '../../components/NotFound/NotFound'
 
@@ -20,6 +16,19 @@ function App (){
                     <Route exact path="/biologia" component={Axes}/>
                     <Route exact path="/fisica" component={Axes}/>
                     <Route exact path="/quimica" component={Axes}/>
+
+                    <Route exact path="/biologia/materia" component={Content}/>
+                    <Route exact path="/biologia/sistemas" component={Content}/>
+                    <Route exact path="/biologia/diversidad" component={Content}/>
+
+                    <Route exact path="/fisica/materia" component={Content}/>
+                    <Route exact path="/fisica/sistemas" component={Content}/>
+                    <Route exact path="/fisica/diversidad" component={Content}/>
+
+                    <Route exact path="/quimica/materia" component={Content}/>
+                    <Route exact path="/quimica/sistemas" component={Content}/>
+                    <Route exact path="/quimica/diversidad" component={Content}/>
+                    
                     <Route exact path="/fisica/1/propiedades" component ={Topics}/>
                     <Route component={NotFound}/>
                 </Switch>

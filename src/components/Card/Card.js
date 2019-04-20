@@ -4,7 +4,7 @@ import './card.scss'
 
 const Card = (props) => {
     return(
-                <Link to={{pathname: props.link,state: {id:props.id}}} >
+                <Link to={{pathname: props.link,state: {idSubject:props.idSubject,idAxe:props.idAxe}}} >
                     <div className="Card">
                         <div className="Image">
                             <img src={props.image}  height ={props.height} width={props.width} alt={props.title}/>

@@ -15,7 +15,7 @@ class Subjects extends Component {
                     width={subject.width}
                     height={subject.height}
                     link={subject.link}
-                    id={subject.id}
+                    idSubject={subject.id}
                    />
                 ))}
             </div>

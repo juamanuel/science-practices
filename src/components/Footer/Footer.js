@@ -7,7 +7,7 @@ const Footer = (props) => {
         <div className="Footer">
              <p>
                 <Link to="/">{props.home}</Link> 
-                <Link to={props.routeSubject}>{props.subject}</Link> 
+                <Link to={{pathname: props.routeSubject,state: {idSubject:props.idSubject}}}>{props.subject}</Link> 
                 <Link to={props.routeAxes}>{props.axes}</Link>
              </p>
         </div>

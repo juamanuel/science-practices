@@ -11,7 +11,7 @@ class Axes extends Component{
         loading: true,
         error: null,
         data : undefined,
-        id: this.props.location.state.id,
+        idSubject: this.props.location.state.idSubject,
         subject:"",
         subjectLink:""
     }
@@ -26,16 +26,15 @@ class Axes extends Component{
         try{
             const data = await api
             this.setState({loading:false, data:data})
-            this.getSubjectInfo()
+            this.getFooterInfo()
         }catch(error){
             this.setState({loading:false, error:error})
         }
     }
 
-    getSubjectInfo = () =>{
-        console.log(this.state.data)
+    getFooterInfo = () =>{
         this.state.data.subjects.map(subject =>(
-            subject.id === this.state.id ?
+            subject.id === this.state.idSubject ?
             this.setState({subject:subject.title, subjectLink:subject.link})
             : null
          ))
@@ -44,7 +43,7 @@ class Axes extends Component{
     renderTitle = () => {
        return (
         this.state.data.subjects.map(subject =>(
-            subject.id === this.state.id ?
+            subject.id === this.state.idSubject ?
                 <Title
                     key={subject.id}
                     title={subject.title}
@@ -59,10 +58,12 @@ class Axes extends Component{
         return(
             <div className="Axes">
                 {this.state.data.subjects.map(subject => (
-                    subject.id === this.state.id ?
+                    subject.id === this.state.idSubject ?
                     subject.axes.map(axe => (
                         <Card
                             key={axe.id}
+                            idSubject={subject.id}
+                            idAxe={axe.id}
                             title={axe.title}
                             image={axe.image}
                             width={axe.width}
@@ -78,13 +79,14 @@ class Axes extends Component{
 
    renderFooter = () => {
         return(
-                    <Footer
-                        home="Inicio > "
-                        subject={this.state.subject}
-                        routeSubject={this.state.subjectLink}
-                        axes=""
-                        routeAxes=""
-                    />   
+            <Footer
+                home="Inicio > "
+                idSubject={this.state.idSubject}
+                subject={this.state.subject}
+                routeSubject={this.state.subjectLink}
+                axes=""
+                routeAxes=""
+            />   
         )
      }
     render(){
