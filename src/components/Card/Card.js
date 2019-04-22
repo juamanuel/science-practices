@@ -3,8 +3,9 @@ import { Link} from 'react-router-dom'
 import './card.scss'
 
 const Card = (props) => {
+    //console.log(props.link)
     return(
-                <Link to={{pathname: props.link,state: {idSubject:props.idSubject,idAxe:props.idAxe}}} >
+                <Link to={{pathname: `${props.link}`}} >
                     <div className="Card">
                         <div className="Image">
                             <img src={props.image}  height ={props.height} width={props.width} alt={props.title}/>

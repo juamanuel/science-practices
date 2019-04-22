@@ -11,12 +11,14 @@ class Axes extends Component{
         loading: true,
         error: null,
         data : undefined,
-        idSubject: this.props.location.state.idSubject,
+        idSubject: this.props.match.params.idSubject,
         subject:"",
         subjectLink:""
     }
 
     componentDidMount(){
+       // console.log(this.props);
+        //console.log(this.props.match.params.id);
         this.fetchData()
     }
 
@@ -68,7 +70,7 @@ class Axes extends Component{
                             image={axe.image}
                             width={axe.width}
                             height={axe.height}
-                            link = {axe.link}
+                            link={subject.link+subject.id+"/"+axe.id}
                         />
                     ))
                     : null
@@ -83,7 +85,7 @@ class Axes extends Component{
                 home="Inicio > "
                 idSubject={this.state.idSubject}
                 subject={this.state.subject}
-                routeSubject={this.state.subjectLink}
+                routeSubject={this.state.subjectLink+this.state.idSubject}
                 axes=""
                 routeAxes=""
             />   

@@ -9,7 +9,7 @@
           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437043/ciencias-app/Subjects/biology_xmvi5s.svg",
           "width":"200",
           "height":"200",
-          "link":"/biologia",
+          "link":"/biologia/",
           "axes":[
              {
                 "id":"1",
@@ -17,7 +17,7 @@
                 "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437103/ciencias-app/Axes/axes1_gm2mqi.svg",
                 "width":"200",
                 "height":"200",
-                "link":"/biologia/materia",
+                "link":"/biologia/materia/",
                 "contents":[
                    {
                       "id":"1",
@@ -25,7 +25,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/materia/propiedades",
+                      "link":"/biologia/materia/propiedades/",
                       "topics":[
                          {
                             "id":"1",
@@ -33,7 +33,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/materia/propiedades/celula",
+                            "link":"/biologia/materia/propiedades/celula/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -44,7 +44,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/materia/interacciones",
+                      "link":"/biologia/materia/interacciones/",
                       "topics":[
                          {
                             "id":"1",
@@ -52,7 +52,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/materia/interacciones/depredador-presa",
+                            "link":"/biologia/materia/interacciones/depredador-presa/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -63,7 +63,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/materia/naturaleza",
+                      "link":"/biologia/materia/naturaleza/",
                       "topics":[
                          {
                             "id":"1",
@@ -71,7 +71,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/materia/naturaleza/funciones-celula",
+                            "link":"/biologia/materia/naturaleza/funciones-celula/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -84,7 +84,7 @@
                 "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437104/ciencias-app/Axes/axes2_dbqat3.svg",
                 "width":"200",
                 "height":"200",
-                "link":"/biologia/sistemas",
+                "link":"/biologia/sistemas/",
                 "contents":[
                    {
                       "id":"1",
@@ -92,7 +92,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/sistemas/cuerpo-humano",
+                      "link":"/biologia/sistemas/cuerpo-humano/",
                       "topics":[
                          {
                             "id":"1",
@@ -100,7 +100,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/sistemas/cuerpo-humano/sistema-nervioso",
+                            "link":"/biologia/sistemas/cuerpo-humano/sistema-nervioso/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -111,7 +111,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/sistemas/ecosistemas",
+                      "link":"/biologia/sistemas/ecosistemas/",
                       "topics":[
                          {
                             "id":"1",
@@ -119,7 +119,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/sistemas/ecosistemas/tipos",
+                            "link":"/biologia/sistemas/ecosistemas/tipos/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -132,7 +132,7 @@
                 "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437103/ciencias-app/Axes/axes3_c2n37l.svg",
                 "width":"200",
                 "height":"200",
-                "link":"/biologia/diversidad",
+                "link":"/biologia/diversidad/",
                 "contents":[
                    {
                       "id":"1",
@@ -140,7 +140,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/diversidad/biodiversidad",
+                      "link":"/biologia/diversidad/biodiversidad/",
                       "topics":[
                          {
                             "id":"1",
@@ -148,7 +148,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/diversidad/biodiversidad/nutricion",
+                            "link":"/biologia/diversidad/biodiversidad/nutricion/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -159,7 +159,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/diversidad/tiempo-cambio",
+                      "link":"/biologia/diversidad/tiempo-cambio/",
                       "topics":[
                          {
                             "id":"1",
@@ -167,7 +167,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/diversidad/tiempo-cambio/darwin",
+                            "link":"/biologia/diversidad/tiempo-cambio/darwin/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -178,7 +178,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/biologia/diversidad/continuidad-ciclos",
+                      "link":"/biologia/diversidad/continuidad-ciclos/",
                       "topics":[
                          {
                             "id":"1",
@@ -186,7 +186,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/biologia/diversidad/continuidad-ciclos/cromosomas",
+                            "link":"/biologia/diversidad/continuidad-ciclos/cromosomas/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -201,7 +201,7 @@
           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437043/ciencias-app/Subjects/physics_xbfvyx.svg",
           "width":"200",
           "height":"200",
-          "link":"/fisica",
+          "link":"/fisica/",
           "axes":[
              {
                 "id":"1",
@@ -209,7 +209,7 @@
                 "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437103/ciencias-app/Axes/axes1_gm2mqi.svg",
                 "width":"200",
                 "height":"200",
-                "link":"/fisica/materia",
+                "link":"/fisica/materia/",
                 "contents":[
                    {
                       "id":"1",
@@ -217,7 +217,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/materia/propiedades",
+                      "link":"/fisica/materia/propiedades/",
                       "topics":[
                          {
                             "id":"1",
@@ -225,7 +225,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/materia/propiedades/modelo-particulas",
+                            "link":"/fisica/materia/propiedades/modelo-particulas/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -236,7 +236,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/materia/interacciones",
+                      "link":"/fisica/materia/interacciones/",
                       "topics":[
                          {
                             "id":"1",
@@ -244,7 +244,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/materia/interacciones/magnetismo",
+                            "link":"/fisica/materia/interacciones/magnetismo/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -255,7 +255,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/materia/naturaleza",
+                      "link":"/fisica/materia/naturaleza/",
                       "topics":[
                          {
                             "id":"1",
@@ -263,7 +263,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/materia/naturaleza/universo",
+                            "link":"/fisica/materia/naturaleza/universo/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -274,7 +274,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/fuerzas_kdvmq4.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/materia/fuerzas",
+                      "link":"/fisica/materia/fuerzas/",
                       "topics":[
                          {
                             "id":"1",
@@ -282,7 +282,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/materia/fuerzas/friccion",
+                            "link":"/fisica/materia/fuerzas/friccion/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -293,7 +293,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437620/ciencias-app/Contents/energia_dq9vhh.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/materia/energia",
+                      "link":"/fisica/materia/energia/",
                       "topics":[
                          {
                             "id":"1",
@@ -301,7 +301,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/materia/energia/mecanica",
+                            "link":"/fisica/materia/energia/mecanica/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -314,7 +314,7 @@
                 "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437104/ciencias-app/Axes/axes2_dbqat3.svg",
                 "width":"200",
                 "height":"200",
-                "link":"/fisica/sistemas",
+                "link":"/fisica/sistemas/",
                 "contents":[
                    {
                       "id":"1",
@@ -322,7 +322,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/sistemas/cuerpo-humano",
+                      "link":"/fisica/sistemas/cuerpo-humano/",
                       "topics":[
                          {
                             "id":"1",
@@ -330,7 +330,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/sistemas/cuerpo-humano/temperatura",
+                            "link":"/fisica/sistemas/cuerpo-humano/temperatura/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -341,7 +341,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/sistemas/sistema-solar",
+                      "link":"/fisica/sistemas/sistema-solar/",
                       "topics":[
                          {
                             "id":"1",
@@ -349,7 +349,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"biologia/sistemas/sistema-solar/gravitacion",
+                            "link":"biologia/sistemas/sistema-solar/gravitacion/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -362,7 +362,7 @@
                 "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437103/ciencias-app/Axes/axes3_c2n37l.svg",
                 "width":"200",
                 "height":"200",
-                "link":"/fisica/diversidad",
+                "link":"/fisica/diversidad/",
                 "contents":[
                    {
                       "id":"1",
@@ -370,7 +370,7 @@
                       "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                       "width":"200",
                       "height":"200",
-                      "link":"/fisica/diversidad/tiempo-cambio",
+                      "link":"/fisica/diversidad/tiempo-cambio/",
                       "topics":[
                          {
                             "id":"1",
@@ -378,7 +378,7 @@
                             "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                             "width":"150",
                             "height":"150",
-                            "link":"/fisica/diversidad/tiempo-cambio/velocidad",
+                            "link":"/fisica/diversidad/tiempo-cambio/velocidad/",
                             "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                          }
                       ]
@@ -393,7 +393,7 @@
         "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437043/ciencias-app/Subjects/chemistry_roexrl.svg",
         "width":"200",
         "height":"200",
-        "link":"/quimica",
+        "link":"/quimica/",
         "axes":[
            {
               "id":"1",
@@ -401,7 +401,7 @@
               "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437103/ciencias-app/Axes/axes1_gm2mqi.svg",
               "width":"200",
               "height":"200",
-              "link":"/quimica/materia",
+              "link":"/quimica/materia/",
               "contents":[
                  {
                     "id":"1",
@@ -409,7 +409,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/materia/propiedades",
+                    "link":"/quimica/materia/propiedades/",
                     "topics":[
                        {
                           "id":"1",
@@ -417,7 +417,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/materia/propiedades/separacion-mezclas",
+                          "link":"/quimica/materia/propiedades/separacion-mezclas/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -428,7 +428,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/materia/interacciones",
+                    "link":"/quimica/materia/interacciones/",
                     "topics":[
                        {
                           "id":"1",
@@ -436,7 +436,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/materia/interacciones/materiales",
+                          "link":"/quimica/materia/interacciones/materiales/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -447,7 +447,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/materia/naturaleza",
+                    "link":"/quimica/materia/naturaleza/",
                     "topics":[
                        {
                           "id":"1",
@@ -455,7 +455,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/materia/naturaleza/elementos",
+                          "link":"/quimica/materia/naturaleza/elementos/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -466,7 +466,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/fuerzas_kdvmq4.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/materia/energia",
+                    "link":"/quimica/materia/energia/",
                     "topics":[
                        {
                           "id":"1",
@@ -474,7 +474,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/materia/energia/procesos-quimicos",
+                          "link":"/quimica/materia/energia/procesos-quimicos/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -487,7 +487,7 @@
               "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437104/ciencias-app/Axes/axes2_dbqat3.svg",
               "width":"200",
               "height":"200",
-              "link":"/quimica/sistemas",
+              "link":"/quimica/sistemas/",
               "contents":[
                  {
                     "id":"1",
@@ -495,7 +495,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/sistemas/cuerpo-humano",
+                    "link":"/quimica/sistemas/cuerpo-humano/",
                     "topics":[
                        {
                           "id":"1",
@@ -503,7 +503,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/sistemas/cuerpo-humano/carbohidratos",
+                          "link":"/quimica/sistemas/cuerpo-humano/carbohidratos/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -514,7 +514,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/interacciones_h7hynr.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/sistemas/ecosistemas",
+                    "link":"/quimica/sistemas/ecosistemas/",
                     "topics":[
                        {
                           "id":"1",
@@ -522,7 +522,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/sistemas/ecosistemas/sustancias-contaminantes",
+                          "link":"/quimica/sistemas/ecosistemas/sustancias-contaminantes/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -535,7 +535,7 @@
               "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437103/ciencias-app/Axes/axes3_c2n37l.svg",
               "width":"200",
               "height":"200",
-              "link":"/quimica/diversidad",
+              "link":"/quimica/diversidad/",
               "contents":[
                  {
                     "id":"1",
@@ -543,7 +543,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/diversidad/tiempo-cambio",
+                    "link":"/quimica/diversidad/tiempo-cambio/",
                     "topics":[
                        {
                           "id":"1",
@@ -551,7 +551,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/diversidad/tiempo-cambio/temperatura",
+                          "link":"/quimica/diversidad/tiempo-cambio/temperatura/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]
@@ -562,7 +562,7 @@
                     "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/propiedades_yaykay.svg",
                     "width":"200",
                     "height":"200",
-                    "link":"/quimica/diversidad/continuidad-ciclos",
+                    "link":"/quimica/diversidad/continuidad-ciclos/",
                     "topics":[
                        {
                           "id":"1",
@@ -570,7 +570,7 @@
                           "image":"https://res.cloudinary.com/juanlg/image/upload/v1555437621/ciencias-app/Contents/naturaleza_gvoc2r.svg",
                           "width":"150",
                           "height":"150",
-                          "link":"/quimica/diversidad/continuidad-ciclos/estructura-atomica",
+                          "link":"/quimica/diversidad/continuidad-ciclos/estructura-atomica/",
                           "practice":"https://res.cloudinary.com/juanlg/image/upload/v1555438028/ciencias-app/Practices/git_ahdeog.pdf"
                        }
                     ]

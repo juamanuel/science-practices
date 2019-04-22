@@ -10,8 +10,8 @@ class Content extends Component{
         loading: true,
         error: null,
         data : undefined,
-        idSubject: this.props.location.state.idSubject,
-        idAxe: this.props.location.state.idAxe,
+        idSubject: this.props.match.params.idSubject,
+        idAxe: this.props.match.params.idAxe,
         subject:"",
         subjectLink:"",
         axe:"",
@@ -19,6 +19,8 @@ class Content extends Component{
     }
 
     componentDidMount(){
+        console.log(this.props.match.params.idSubject)
+        console.log(this.props.match.params.idAxe)
         this.fetchData()
     }
 
@@ -95,9 +97,9 @@ class Content extends Component{
             <Footer
                 home="Inicio > "
                 subject={this.state.subject}
-                routeSubject={this.state.subjectLink}
+                routeSubject={this.state.subjectLink+this.state.idSubject}
                 axes={this.state.axe}
-                routeAxes={this.state.axeLink}
+                routeAxes={this.state.subjectLink+this.state.idSubject+"/"+this.state.idAxe}
             />   
         )
      }
@@ -109,6 +111,7 @@ class Content extends Component{
            <React.Fragment>
                {this.renderTitle()}
                {this.renderCards()}
+               {this.renderFooter()}
            </React.Fragment>
             
         )
