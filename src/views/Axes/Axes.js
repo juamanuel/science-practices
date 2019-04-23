@@ -12,12 +12,13 @@ class Axes extends Component{
         error: null,
         data : undefined,
         idSubject: this.props.match.params.idSubject,
+        url:this.props.match.url,
         subject:"",
         subjectLink:""
     }
 
     componentDidMount(){
-       // console.log(this.props);
+       //console.log(this.props);
         //console.log(this.props.match.params.id);
         this.fetchData()
     }
@@ -33,7 +34,6 @@ class Axes extends Component{
             this.setState({loading:false, error:error})
         }
     }
-
     getFooterInfo = () =>{
         this.state.data.subjects.map(subject =>(
             subject.id === this.state.idSubject ?
@@ -64,13 +64,11 @@ class Axes extends Component{
                     subject.axes.map(axe => (
                         <Card
                             key={axe.id}
-                            idSubject={subject.id}
-                            idAxe={axe.id}
                             title={axe.title}
                             image={axe.image}
                             width={axe.width}
                             height={axe.height}
-                            link={subject.link+subject.id+"/"+axe.id}
+                            link={this.state.url+"/"+axe.id}
                         />
                     ))
                     : null
@@ -85,7 +83,7 @@ class Axes extends Component{
                 home="Inicio > "
                 idSubject={this.state.idSubject}
                 subject={this.state.subject}
-                routeSubject={this.state.subjectLink+this.state.idSubject}
+                routeSubject={this.state.idSubject}
                 axes=""
                 routeAxes=""
             />   

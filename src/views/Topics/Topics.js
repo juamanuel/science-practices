@@ -1,32 +1,94 @@
 import React, {Component} from 'react'
 import Title from '../../components/Title/Title'
-import Footer from '../../components/Footer/Footer'
+//import Footer from '../../components/Footer/Footer'
+import Card from '../../components/Card/Card'
+import api from '../../api.json'
+
 class Topics extends Component {
-    state = {
-        loading:true,
-        error:null,
-        //data:undefined
-        data:[
-            { id:"1", title: 'Propiedades',image:"https://res.cloudinary.com/juanlg/image/upload/v1555434561/ciencias-app/Physics/propiedades_fnqppd.svg", width:'200',height:'200',link:'1/propiedades'},
-            { id:"2",title: 'Interacciones',image:"https://res.cloudinary.com/juanlg/image/upload/v1555434561/ciencias-app/Physics/interacciones_dmclxn.svg", width:'200',height:'200',link:'1/interacciones'},
-            { id:"3",title: 'Naturaleza macro, micro y submicro ',image:"https://res.cloudinary.com/juanlg/image/upload/v1555434561/ciencias-app/Physics/naturaleza_spuav6.svg", width:'200',height:'200',link:'1/naturaleza'},
-            { id:"4",title: 'Fuerzas',image:"https://res.cloudinary.com/juanlg/image/upload/v1555434561/ciencias-app/Physics/fuerzas_fqthtw.svg", width:'200',height:'200',link:'1/fuerzas'},
-            { id:"5",title: 'Energía',image:"https://res.cloudinary.com/juanlg/image/upload/v1555434561/ciencias-app/Physics/energia_t2v0qu.svg", width:'200',height:'200',link:'1/energia'}
-         ]
-    }    
+    state= {
+        loading: true,
+        error: null,
+        data : undefined,
+        idSubject: this.props.match.params.idSubject,
+        idAxe: this.props.match.params.idAxe,
+        idContent: this.props.match.params.idContent,
+        subject:"",
+        subjectLink:"",
+        axe:"",
+        url: this.props.match.params.url
+    }
+
+    componentDidMount(){
+        this.fetchData()
+    }
+
+    fetchData = async () => {
+        this.setState({loading:true, error:null})
+        try{
+            const data = await api
+            this.setState({loading:false, data:data})
+           //this.getFooterInfo()
+        }catch(error){
+            this.setState({loading:false, error:error})
+        }
+    }
+
+    renderTitle = () => {
+        return (
+         this.state.data.subjects.map(subject =>(
+             subject.id === this.state.idSubject ?
+                subject.axes.map(axe => (
+                    axe.id === this.state.idAxe ?
+                        axe.contents.map(content => (
+                            content.id === this.state.idContent ?
+                            <Title
+                                key={content.id}
+                                title={content.title}
+                            />
+                            :null
+                        )) 
+                    : null
+                ))
+             : null
+          ))
+        )
+     }
+
+     renderCards = () => {
+        return (
+         this.state.data.subjects.map(subject =>(
+             subject.id === this.state.idSubject ?
+                subject.axes.map(axe => (
+                    axe.id === this.state.idAxe ?
+                        axe.contents.map(content => (
+                            content.id === this.state.idContent ?
+                                content.topics.map(topic => (
+                                    <Card
+                                    key={topic.id}
+                                    title={topic.title}
+                                    image={topic.image}
+                                    width={topic.width}
+                                    height={topic.height}
+                                    link={this.state.url +"/" + topic.id}
+                                />
+                                )) :null
+                        )) 
+                    : null
+                ))
+             : null
+          ))
+        )
+     }
     render(){
+    
+        if(this.state.loading){
+            return 'Loading ...'
+        }
         return (
             <React.Fragment>
-                <Title
-                title="Titulo"
-                />
-                <Footer
-                  home="Inicio > "
-                  subject="Física > "
-                  axes="Materia, energía e interacciones"
-                  routeSubject="/fisica"
-                  routeAxes="/fisica/1"  
-                />
+                {this.renderTitle()}
+                {this.renderCards()}
+                
             </React.Fragment>
         )
     }

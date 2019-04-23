@@ -15,12 +15,10 @@ class Content extends Component{
         subject:"",
         subjectLink:"",
         axe:"",
-        axeLink:""
+        url:this.props.match.url
     }
 
     componentDidMount(){
-        console.log(this.props.match.params.idSubject)
-        console.log(this.props.match.params.idAxe)
         this.fetchData()
     }
 
@@ -29,7 +27,7 @@ class Content extends Component{
         try{
             const data = await api
             this.setState({loading:false, data:data})
-           this.getFooterInfo()
+            this.getFooterInfo()
         }catch(error){
             this.setState({loading:false, error:error})
         }
@@ -40,7 +38,7 @@ class Content extends Component{
             subject.id === this.state.idSubject ?
                 subject.axes.map(axe =>(
                     axe.id === this.state.idAxe ?
-                    this.setState({subject:subject.title, subjectLink:subject.link,axe: axe.title, axeLink:axe.link})
+                    this.setState({subject:subject.title, subjectLink:subject.link,axe: axe.title})
                     : null
                 ))
             : null
@@ -75,14 +73,11 @@ class Content extends Component{
                                     axe.contents.map(content =>(
                                         <Card
                                             key={content.id}
-                                            idSubject={subject.id}
-                                            idAxe={axe.id}
-                                            idContent={content.id}
                                             title={content.title}
                                             image={content.image}
                                             width={content.width}
                                             height={content.height}
-                                            link = {content.link}
+                                            link={this.state.url +"/" + content.id}
                                         />
                                     )) :null
                             )) :null
@@ -97,9 +92,9 @@ class Content extends Component{
             <Footer
                 home="Inicio > "
                 subject={this.state.subject}
-                routeSubject={this.state.subjectLink+this.state.idSubject}
+                routeSubject={this.state.idSubject}
                 axes={this.state.axe}
-                routeAxes={this.state.subjectLink+this.state.idSubject+"/"+this.state.idAxe}
+                routeAxes={this.state.idSubject+"/"+this.state.idAxe}
             />   
         )
      }

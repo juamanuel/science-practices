@@ -14,7 +14,7 @@ class Subjects extends Component {
                     image={subject.image}
                     width={subject.width}
                     height={subject.height}
-                    link={subject.link+subject.id}
+                    link={subject.id}
                     idSubject={subject.id}
                    />
                 ))}
