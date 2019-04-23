@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Title from '../../components/Title/Title'
 import Card from '../../components/Card/Card'
 import Footer from '../../components/Footer/Footer'
-import './axes.scss'
+import '../../css/styles.scss'
 import api from '../../api.json'
 
 class Axes extends Component{
@@ -53,10 +53,9 @@ class Axes extends Component{
        )
     }
 
-    renderCards = () => {
-            // eslint-disable-next-line no-unused-expressions
+    renderAxes = () => {
         return(
-            <div className="Axes">
+            <div className="Container">
                 {this.state.data.subjects.map(subject => (
                     subject.id === this.state.idSubject ?
                     subject.axes.map(axe => (
@@ -93,7 +92,7 @@ class Axes extends Component{
         return(
             <React.Fragment>
                 {this.renderTitle()}
-                {this.renderCards()}
+                {this.renderAxes()}
                 {this.renderFooter()}
             </React.Fragment>
         )

@@ -1,14 +1,14 @@
 @import './../../css/constants.scss';
 
 .Card {
-    max-width: 350px;
-    max-height: 415px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
+
 }
 
 .Image {

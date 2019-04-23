@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Title from '../../components/Title/Title'
 import Footer from '../../components/Footer/Footer'
 import Card from '../../components/Card/Card'
+import '../../css/styles.scss'
 import api from '../../api.json'
 
 class Topics extends Component {
@@ -52,27 +53,32 @@ class Topics extends Component {
         )
      }
 
-     renderCards = () => {
+     renderTopics = () => {
         return (
-         this.state.data.subjects.map(subject =>(
-             subject.id === this.state.idSubject ?
-                subject.axes.map(axe => (
-                    axe.id === this.state.idAxe ?
-                        axe.contents.map(content => (
-                            content.id === this.state.idContent ?
-                                content.topics.map(topic => (
-                                    <Card
-                                    key={topic.id}
-                                    title={topic.title}
-                                    image={topic.image}
-                                    width={topic.width}
-                                    height={topic.height}
-                                    link={this.state.url +"/" + topic.id}
-                                />
-                                )) :null
-                        )) : null
-                )): null
-          ))
+            <div className="Container">
+                {
+                    this.state.data.subjects.map(subject =>(
+                        subject.id === this.state.idSubject ?
+                           subject.axes.map(axe => (
+                               axe.id === this.state.idAxe ?
+                                   axe.contents.map(content => (
+                                       content.id === this.state.idContent ?
+                                           content.topics.map(topic => (
+                                               <Card
+                                               key={topic.id}
+                                               title={topic.title}
+                                               image={topic.image}
+                                               width={topic.width}
+                                               height={topic.height}
+                                               link={this.state.url +"/" + topic.id}
+                                           />
+                                           )) :null
+                                   )) : null
+                           )): null
+                     ))
+                   
+                }
+            </div>
         )
      }
 
@@ -105,14 +111,13 @@ class Topics extends Component {
         )
      }
     render(){
-        console.log(this.state.url)
         if(this.state.loading){
             return 'Loading ...'
         }
         return (
             <React.Fragment>
                 {this.renderTitle()}
-                {this.renderCards()}
+                {this.renderTopics()}
                 {this.renderFooter()}            
             </React.Fragment>
         )

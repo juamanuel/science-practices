@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Title from '../../components/Title/Title'
 import Card from '../../components/Card/Card'
 import Footer from '../../components/Footer/Footer'
-import './content.scss'
+import '../../css/styles.scss'
 import api from '../../api.json'
 
 class Content extends Component{
@@ -58,9 +58,9 @@ class Content extends Component{
         )
      }
 
-     renderCards = () => {
+     renderContents = () => {
         return (
-            <div className="Content">
+            <div className="Container">
                 {
                     this.state.data.subjects.map(subject =>(
                         subject.id === this.state.idSubject ?
@@ -100,7 +100,7 @@ class Content extends Component{
         return(
            <React.Fragment>
                {this.renderTitle()}
-               {this.renderCards()}
+               {this.renderContents()}
                {this.renderFooter()}
            </React.Fragment>
         )
