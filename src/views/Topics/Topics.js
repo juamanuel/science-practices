@@ -12,9 +12,8 @@ class Topics extends Component {
         idSubject: this.props.match.params.idSubject,
         idAxe: this.props.match.params.idAxe,
         idContent: this.props.match.params.idContent,
-        url: this.props.match.params.url,
+        url: this.props.match.url,
         subject:"",
-        subjectLink:"",
         axe:"",
         content:"",
         topic:""
@@ -106,7 +105,7 @@ class Topics extends Component {
         )
      }
     render(){
-    
+        console.log(this.state.url)
         if(this.state.loading){
             return 'Loading ...'
         }
