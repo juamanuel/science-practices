@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Title from '../../components/Title/Title'
-//import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 import Card from '../../components/Card/Card'
 import api from '../../api.json'
 
@@ -12,10 +12,12 @@ class Topics extends Component {
         idSubject: this.props.match.params.idSubject,
         idAxe: this.props.match.params.idAxe,
         idContent: this.props.match.params.idContent,
+        url: this.props.match.params.url,
         subject:"",
         subjectLink:"",
         axe:"",
-        url: this.props.match.params.url
+        content:"",
+        topic:""
     }
 
     componentDidMount(){
@@ -27,7 +29,7 @@ class Topics extends Component {
         try{
             const data = await api
             this.setState({loading:false, data:data})
-           //this.getFooterInfo()
+           this.getFooterInfo()
         }catch(error){
             this.setState({loading:false, error:error})
         }
@@ -44,12 +46,9 @@ class Topics extends Component {
                             <Title
                                 key={content.id}
                                 title={content.title}
-                            />
-                            :null
-                        )) 
-                    : null
-                ))
-             : null
+                            /> :null
+                        )) : null
+                )) : null
           ))
         )
      }
@@ -72,11 +71,38 @@ class Topics extends Component {
                                     link={this.state.url +"/" + topic.id}
                                 />
                                 )) :null
-                        )) 
-                    : null
-                ))
-             : null
+                        )) : null
+                )): null
           ))
+        )
+     }
+
+     getFooterInfo = () =>{
+        this.state.data.subjects.map(subject =>(
+            subject.id === this.state.idSubject ?
+                subject.axes.map(axe =>(
+                    axe.id === this.state.idAxe ?
+                    axe.contents.map(content => (
+                        content.id === this.state.idContent ?
+                            content.topics.map(topic => (
+                                this.setState({subject:subject.title,axe: axe.title, content:content.title, topic:topic.title})
+                            )) :null
+                    ))  : null
+                )) : null
+         ))
+    }
+
+    renderFooter = () => {
+        return(
+            <Footer
+                home="Inicio > "
+                subject={this.state.subject}
+                routeSubject={this.state.idSubject}
+                axes={this.state.axe}
+                routeAxes={this.state.idSubject+"/"+this.state.idAxe}
+                content={this.state.content}
+                routeContent={this.state.idSubject+"/"+this.state.idAxe+"/"+this.state.idContent}
+            />   
         )
      }
     render(){
@@ -88,7 +114,7 @@ class Topics extends Component {
             <React.Fragment>
                 {this.renderTitle()}
                 {this.renderCards()}
-                
+                {this.renderFooter()}            
             </React.Fragment>
         )
     }

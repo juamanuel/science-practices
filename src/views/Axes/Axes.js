@@ -13,8 +13,7 @@ class Axes extends Component{
         data : undefined,
         idSubject: this.props.match.params.idSubject,
         url:this.props.match.url,
-        subject:"",
-        subjectLink:""
+        subject:""
     }
 
     componentDidMount(){
@@ -37,7 +36,7 @@ class Axes extends Component{
     getFooterInfo = () =>{
         this.state.data.subjects.map(subject =>(
             subject.id === this.state.idSubject ?
-            this.setState({subject:subject.title, subjectLink:subject.link})
+            this.setState({subject:subject.title})
             : null
          ))
     }
@@ -49,8 +48,7 @@ class Axes extends Component{
                 <Title
                     key={subject.id}
                     title={subject.title}
-                />
-            : null
+                /> : null
          ))
        )
     }
@@ -70,8 +68,7 @@ class Axes extends Component{
                             height={axe.height}
                             link={this.state.url+"/"+axe.id}
                         />
-                    ))
-                    : null
+                    )) : null
                 ))}
             </div>
         )         

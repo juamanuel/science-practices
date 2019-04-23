@@ -12,10 +12,9 @@ class Content extends Component{
         data : undefined,
         idSubject: this.props.match.params.idSubject,
         idAxe: this.props.match.params.idAxe,
+        url:this.props.match.url,
         subject:"",
-        subjectLink:"",
-        axe:"",
-        url:this.props.match.url
+        axe:""
     }
 
     componentDidMount(){
@@ -38,10 +37,9 @@ class Content extends Component{
             subject.id === this.state.idSubject ?
                 subject.axes.map(axe =>(
                     axe.id === this.state.idAxe ?
-                    this.setState({subject:subject.title, subjectLink:subject.link,axe: axe.title})
+                    this.setState({subject:subject.title,axe: axe.title})
                     : null
-                ))
-            : null
+                )) : null
          ))
     }
 
@@ -54,10 +52,8 @@ class Content extends Component{
                         <Title
                         key={axe.id}
                         title={axe.title}
-                    />
-                    : null
-                ))
-             : null
+                    /> : null
+                )) : null
           ))
         )
      }
@@ -83,7 +79,6 @@ class Content extends Component{
                             )) :null
                     )) 
                 }
-
             </div>
         )
      }
@@ -108,10 +103,8 @@ class Content extends Component{
                {this.renderCards()}
                {this.renderFooter()}
            </React.Fragment>
-            
         )
     }
-
 }
 
 export default Content
