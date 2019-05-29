@@ -1,0 +1,23 @@
+@import './../../css/constants.scss';
+
+.Button {
+    background-color: $main_color;
+    border: 3px solid $sec_color;
+    border-radius: 8px;
+    cursor: pointer;
+    display:flex;
+    font-family:$text_font;
+    font-size: 17px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.Button a {color:white}
+.Button a:hover {color:$main_color}
+
+.Button:hover {
+    background-color: $light_color;
+    color:$main_color;
+}
